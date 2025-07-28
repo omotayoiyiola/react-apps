@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const RockPaperScissors = () => {
-  const choices = ["paper", "scissors"];
+  const choices = ["paper", "scissors", "rock"];
   const [userChoice, setUserChoice] = useState("");
   const [computerChoice, setComputerChoice] = useState("");
   const [result, setResult] = useState("");
 
   const playGame = (userPick) => {
-    const computerPick = choices[Math.floor(Math.random() * 2)];
+    const computerPick = choices[Math.floor(Math.random() * 3)];
     setUserChoice(userPick);
     setComputerChoice(computerPick);
     getResult(userPick, computerPick);
@@ -16,7 +16,11 @@ const RockPaperScissors = () => {
   const getResult = (userPick, computerPick) => {
     if (userPick === computerPick) {
       setResult("Its a draw");
-    } else if (userPick === "scissors" && computerPick === "paper") {
+    } else if (
+      (userPick === "scissors" && computerPick === "paper") ||
+      (userPick === "rock" && computerPick === "scissors") ||
+      (userPick === "paper" && computerPick === "rock")
+    ) {
       setResult("You win!");
     } else {
       setResult("You lose!");
