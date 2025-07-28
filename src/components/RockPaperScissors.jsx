@@ -7,7 +7,7 @@ const RockPaperScissors = () => {
   const [result, setResult] = useState("");
 
   const playGame = (userPick) => {
-    const computerPick = choices[Math.floor(Math.random() * 3)];
+    const computerPick = choices[Math.floor(Math.random() * 3) + 1];
     setUserChoice(userPick);
     setComputerChoice(computerPick);
     getResult(userPick, computerPick);
