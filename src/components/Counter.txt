@@ -1,0 +1,15 @@
+useState is a React Hook that lets you add state 
+(i.e., memory) to a function component.
+
+Why use it?
+In a normal JavaScript function, once it runs, all variables inside are gone.
+But in a React component, we want to:
+Remember values (e.g., a count, input text)
+Update the UI when those values change
+
+Basic syntax
+const [state, setState] = useState(initialValue);
+
+state: current value
+setState: function to update it
+initialValue: what the state starts as (e.g. 0, "", [])

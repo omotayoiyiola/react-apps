@@ -1,0 +1,7 @@
+Read a book
+Go to market
+Attend class
+
+Its actually an array
+
+const todos = ["Read a book", "Go to market", "Attend class"] 

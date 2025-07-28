@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: rgb(97, 167, 229);
+  color: white;
+  align-items: center;
+}
+
+.buttons-div {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  font-size: 20px;
+}
