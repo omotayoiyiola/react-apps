@@ -1,0 +1,16 @@
+The useEffect hook in React is a fundamental tool for performing "side effects" in 
+functional components. 
+Side effects are operations that interact with the outside world, such as:
+Data fetching: Making API calls to retrieve or send data.
+DOM manipulation: Directly interacting with the browser's Document Object Model 
+(e.g., setting the document title, adding event listeners).
+Subscriptions: Setting up and cleaning up subscriptions to external services 
+(e.g., chat services, real-time data feeds).
+Timers: Using setTimeout or setInterval.
+How useEffect works:
+Callback Function: The useEffect hook takes a function as its first argument. This function contains the code for your side effect.
+JavaScript
+
+    useEffect(() => {
+      // Side effect code here
+    }, []);

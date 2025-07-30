@@ -1,0 +1,17 @@
+Typing Speed Test Game
+A fun challenge to test how fast you can type in a limited time!
+
+🔧 Features:
+A 10-second countdown timer ⏱️
+
+A textarea where the user types
+
+Tracks how many words you typed
+
+Uses:
+
+useState → to track time, text, and game state
+
+useEffect → to handle the countdown timer
+
+useRef -> Form Focus
